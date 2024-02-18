@@ -29,7 +29,12 @@ const Header = () => {
                     </Grid>
 
                     <Grid item xs={4} className={classes.tabsContainer}>
-                        <Tabs value={tabNumber} textColor='inherit' onChange={handleTabChange}>
+                        <Tabs
+                            value={tabNumber}
+                            textColor='inherit'
+                            indicatorColor='secondary'
+                            onChange={handleTabChange}
+                        >
                             <Tab label="Home" value={0} className={classes.tab}/>
                             <Tab label="Store" value={1} className={classes.tab}/>
                             <Tab label="About" value={2} className={classes.tab}/>

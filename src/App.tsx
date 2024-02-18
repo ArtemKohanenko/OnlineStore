@@ -9,7 +9,10 @@ function App() {
     {
       palette: {
         primary: {
-          main: '#FDEBD6'
+          main: '#FDEBD6',
+        },
+        secondary: {
+          main: '#FFD49F'
         }
       },
       typography: {

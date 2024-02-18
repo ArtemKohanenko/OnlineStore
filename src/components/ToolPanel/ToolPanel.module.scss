@@ -1,0 +1,59 @@
+@import 'src/styles';
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 100px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    background-color: $color-primary;
+
+    .leftBlock {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            align-items: center;
+
+            .filterContainer {
+                display: flex;
+                flex-direction: row;
+                gap: 12px;
+                align-items: center;
+            }
+        }
+
+        .divider {
+            width: 2px;
+            height: 37px;
+            background-color: $color-divider;
+        }
+    }
+
+    .rightBlock {
+        .showContainer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 17px;
+
+            .showField {
+                height: 55px;
+                width: 55px;
+                padding: 12px;
+                box-sizing: border-box;
+                text-align: center;
+                background-color: white;
+                border-radius: 0;
+            }
+        }
+    }
+}

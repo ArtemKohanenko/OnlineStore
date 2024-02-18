@@ -11,6 +11,15 @@ function App() {
         primary: {
           main: '#FDEBD6'
         }
+      },
+      typography: {
+        fontFamily: 'Poppins',
+        body1: {
+          fontSize: '16px'
+        },
+        body2: {
+          fontSize: '20px'
+        }
       }
     }
   );

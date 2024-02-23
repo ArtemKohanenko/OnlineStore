@@ -1,0 +1,40 @@
+@import 'src/styles';
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 100px;
+
+    .picture {
+        height: 500px;
+    }
+
+    .textData {
+        display: flex;
+        flex-direction: column;
+
+        .name {
+            font-size: $typography-header-s-font-size;
+            color: $color-text-primary;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: start;
+
+            .price {
+                font-size: $typography-title-font-size;
+                color: $color-text-field;
+                font-weight: 500;
+            }
+
+            .description {
+                color: $color-text-primary;
+                font-size: $typography-text-font-size;
+            }
+        }
+    }
+}

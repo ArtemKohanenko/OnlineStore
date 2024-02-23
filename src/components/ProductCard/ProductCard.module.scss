@@ -1,0 +1,29 @@
+@import 'src/styles';
+
+.container {
+    .picture {
+        width: 285px;
+        height: 300px;
+    }
+
+    .textData {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .title {
+            font-weight: 600;
+            color: $color-text-title;
+        }
+
+        .subtitle {
+            font-weight: 500;
+            color: $color-text-subtitle;
+        }
+
+        .price {
+            font-weight: 600;
+            color: $color-text-title;
+        }
+    }
+}

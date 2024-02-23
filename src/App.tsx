@@ -22,6 +22,9 @@ function App() {
         },
         body2: {
           fontSize: '20px'
+        },
+        subtitle1: {
+          fontSize: '24px'
         }
       }
     }

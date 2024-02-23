@@ -1,5 +1,5 @@
 import { Route, Routes as CRoutes} from "react-router-dom";
-import CatalogPage from "../components/CatalogPage/CatalogPage"
+import CatalogPage from "./CatalogPage/CatalogPage"
 
 const Routes = () => {
     return (

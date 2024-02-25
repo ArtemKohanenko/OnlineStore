@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from "react-router-dom";
 
 import { IProduct } from '../../types/product'
 
@@ -9,11 +10,17 @@ import Box from '@mui/material/Box'
 
 const ProductCard = (props: {product: IProduct}) => {
 
+    const navigate = useNavigate();
+
     const product = props.product;
+
+    const cardClickHandler = () => {
+        navigate(product.productId)
+    }
 
     return(
         <>
-            <Box className={classes.container}>
+            <Box className={classes.container} onClick={cardClickHandler}>
                 <img src='src/assets/product_example.png' className={classes.picture}></img>
                 <Box className={classes.textData}>
                     <Typography variant='subtitle1' className={classes.title}>{product.name}</Typography>

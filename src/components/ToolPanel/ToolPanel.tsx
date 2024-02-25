@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
-import Box from '@mui/material/Box'
 import TuneIcon from '@mui/icons-material/Tune'
 import WindowIcon from '@mui/icons-material/Window'
 import ViewDayIcon from '@mui/icons-material/ViewDay'
 import Typography from '@mui/material/Typography'
 import TextField from '@mui/material/TextField'
+import Box from '@mui/material/Box'
 
 import classes from './ToolPanel.module.scss'
 

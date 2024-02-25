@@ -4,10 +4,9 @@ import { IProduct } from '../../types/product'
 
 import classes from './ProductsGrid.module.scss'
 
-import Typography from '@mui/material/Typography'
-import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
 import ProductCard from '../ProductCard/ProductCard'
+import Box from '@mui/material/Box'
 
 const ProductsGrid = (props: {products: IProduct[]}) => {
     const products = props.products;

@@ -1,7 +1,22 @@
 import { useMemo } from 'react';
 import Routes from './routes';
-import { createTheme } from '@mui/material';
+import { PaletteColorOptions, PaletteOptions, createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@emotion/react';
+
+declare module '@mui/material/styles' {
+  interface CustomPalette {
+    black: PaletteColorOptions;
+  }
+  interface Palette extends CustomPalette {}
+  interface PaletteOptions extends CustomPalette {}
+}
+
+declare module '@mui/material/Button' {
+  interface ButtonPropsColorOverrides {
+    black: true;
+  }
+}
+
 
 function App() {
 
@@ -13,6 +28,12 @@ function App() {
         },
         secondary: {
           main: '#FFD49F'
+        },
+        black: {
+          main: '#000000',
+          light: '#000000',
+          dark: '#000000',
+          contrastText: '#000000'
         }
       },
       typography: {
@@ -29,6 +50,7 @@ function App() {
       }
     }
   );
+  
 
   return (
     <>

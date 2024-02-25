@@ -5,6 +5,7 @@ import classes from './ProductDetails.module.scss'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
+import Counter from '../../../components/Counter/Counter'
 
 import { IProduct } from '../../../types/product'
 
@@ -20,7 +21,10 @@ const ProductDetails = (props: {product: IProduct}) => {
                     <Box className={classes.descriptionContainer}>
                         <Typography variant='subtitle1' className={classes.price}>{'₹. ' + product.price}</Typography>
                         <Typography variant='body1' className={classes.description}>{product.description}</Typography>
-                        <Button variant='outlined' color='black' className={classes.addButton}>Add To Cart</Button>
+                        <Box className={classes.buttonsContainer}>
+                            <Counter/>
+                            <Button variant='outlined' color='black' className={classes.addButton}>Add To Cart</Button>
+                        </Box>
                     </Box>
                 </Box>
             </Box>

@@ -36,13 +36,19 @@
                 color: $color-text-primary;
             }
 
-            .addButton {
-                font-size: $typography-subtitle-font-size;
-                text-transform: none;
-                padding: 17px 48px;
-                border-radius: 15px;
-                border: 2px $color-text-primary solid;
-            }
+            .buttonsContainer {
+                display: flex;
+                flex-direction: row;
+                gap: 18px;
+                
+                .addButton {
+                    font-size: $typography-subtitle-font-size;
+                    text-transform: none;
+                    padding: 17px 48px;
+                    border-radius: 15px;
+                    border: 2px $color-text-primary solid;
+                }
+            }            
         }
     }
 }

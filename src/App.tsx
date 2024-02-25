@@ -46,6 +46,12 @@ function App() {
         },
         subtitle1: {
           fontSize: '24px'
+        },
+        h1: {
+          fontSize: '42px'
+        },
+        h2: {
+          fontSize: '34px'
         }
       }
     }

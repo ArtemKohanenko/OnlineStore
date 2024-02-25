@@ -16,10 +16,10 @@ const ProductDetails = (props: {product: IProduct}) => {
             <Box className={classes.container}>
                 <img src={product.picture} className={classes.picture}></img>
                 <Box className={classes.textData}>
-                    <Typography className={classes.name}>{product.name}</Typography>
+                    <Typography variant='h1' className={classes.name}>{product.name}</Typography>
                     <Box className={classes.descriptionContainer}>
-                        <Typography className={classes.price}>{'₹. ' + product.price}</Typography>
-                        <Typography className={classes.description}>{product.description}</Typography>
+                        <Typography variant='subtitle1' className={classes.price}>{'₹. ' + product.price}</Typography>
+                        <Typography variant='body1' className={classes.description}>{product.description}</Typography>
                         <Button variant='outlined' color='black' className={classes.addButton}>Add To Cart</Button>
                     </Box>
                 </Box>

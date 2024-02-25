@@ -25,7 +25,7 @@ const Header = () => {
                 <Grid container className={classes.container}>
                     <Grid item xs={4} className={classes.logoContainer}>
                         <img src='src/assets/logo.svg'></img>
-                        <Typography className={classes.logoText}>Fantasture</Typography>
+                        <Typography variant='h2' className={classes.logoText}>Fantasture</Typography>
                     </Grid>
 
                     <Grid item xs={4} className={classes.tabsContainer}>

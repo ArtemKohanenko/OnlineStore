@@ -15,7 +15,7 @@ const ProductNavigationPanel = (props: {productName: string}) => {
             <Box className={classes.container}>
                 <Box className={classes.leftBlock}>
                     <Box className={classes.navigation}>
-                        <Typography className={classes.pathText}>Home</Typography>
+                        <Typography variant='body1' className={classes.pathText}>Home</Typography>
                         <KeyboardArrowRightIcon/>
                         <Typography>Shop</Typography>
                         <KeyboardArrowRightIcon/>

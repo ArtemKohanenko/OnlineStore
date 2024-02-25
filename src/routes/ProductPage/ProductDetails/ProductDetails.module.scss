@@ -17,7 +17,6 @@
         align-items: start;
 
         .name {
-            font-size: $typography-header-s-font-size;
             color: $color-text-primary;
         }
 
@@ -28,7 +27,6 @@
             align-items: start;
 
             .price {
-                font-size: $typography-title-font-size;
                 color: $color-text-field;
                 font-weight: 500;
             }
@@ -36,7 +34,6 @@
             .description {
                 width: 424px;
                 color: $color-text-primary;
-                font-size: $typography-primary-font-size;
             }
 
             .addButton {
@@ -44,7 +41,7 @@
                 text-transform: none;
                 padding: 17px 48px;
                 border-radius: 15px;
-                border: 1.5px $color-text-primary solid;
+                border: 2px $color-text-primary solid;
             }
         }
     }

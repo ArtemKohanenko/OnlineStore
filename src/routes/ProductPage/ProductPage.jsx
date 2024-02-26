@@ -7,7 +7,7 @@ import ProductDetails from "./ProductDetails/ProductDetails"
 
 const ProductPage = () => {
 
-    // const params = useParams();
+    const params = useParams();
 
     const product = {
         productId: '1',
